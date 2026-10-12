@@ -1,0 +1,12 @@
+{
+  "android": {
+    "versionCode": 8,
+    "versionName": "1.7",
+    "url": "https://hrose.me/planck-weather/downloads/planck-weather-1.7.apk"
+  },
+  "wear": {
+    "versionCode": 8,
+    "versionName": "1.7",
+    "url": "https://hrose.me/planck-weather/downloads/planck-weather-wear-1.7.apk"
+  }
+}
