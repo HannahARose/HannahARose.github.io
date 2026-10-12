@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hannah Rose</title>
+<meta name="description" content="Hannah Rose: projects and things in progress.">
+<meta property="og:title" content="Hannah Rose">
+<meta property="og:url" content="https://hrose.me/">
+<meta name="theme-color" content="#0e0b3d">
+<link rel="icon" type="image/png" href="planck-weather/assets/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Fraunces:opsz,wght@9..144,600&display=swap" rel="stylesheet">
+<style>
+  :root { --text: #f4f2ff; --muted: #b9b3e0; --line: rgba(255,255,255,.12); --card: rgba(255,255,255,.06); --ember: #ff7a3d; }
+  * { box-sizing: border-box; }
+  html, body { height: 100%; }
+  body {
+    margin: 0; color: var(--text);
+    font: 17px/1.6 Inter, -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    background:
+      radial-gradient(40rem 30rem at 85% 110%, rgba(255,122,61,.18), transparent 60%),
+      linear-gradient(160deg, #0e0b3d 0%, #2b1a7a 60%, #5b1e8c 100%);
+    background-attachment: fixed;
+    display: flex; flex-direction: column;
+  }
+  body::before { content: ""; position: fixed; inset: 0; pointer-events: none;
+    background-image:
+      radial-gradient(2px 2px at 14% 20%, #fff9, transparent), radial-gradient(1.5px 1.5px at 30% 72%, #fff6, transparent),
+      radial-gradient(2px 2px at 80% 16%, #fffa, transparent), radial-gradient(1.5px 1.5px at 90% 56%, #fff6, transparent),
+      radial-gradient(1px 1px at 60% 86%, #fff6, transparent), radial-gradient(1.5px 1.5px at 44% 8%, #fff7, transparent); }
+  main { flex: 1; display: flex; align-items: center; padding: 64px 24px; position: relative; }
+  .inner { max-width: 640px; margin: 0 auto; width: 100%; }
+  h1 { font-family: Fraunces, Georgia, serif; font-weight: 600; font-size: clamp(48px, 9vw, 76px); line-height: 1; margin: 0 0 16px; letter-spacing: -.01em; }
+  .lede { color: var(--muted); font-size: 19px; margin: 0 0 48px; }
+  h2 { font-size: 13px; text-transform: uppercase; letter-spacing: .12em; color: var(--muted); font-weight: 600; margin: 0 0 14px; }
+  .project {
+    display: flex; gap: 18px; align-items: center; padding: 18px; border-radius: 18px;
+    background: var(--card); border: 1px solid var(--line); color: var(--text); text-decoration: none;
+    transition: background .15s, border-color .15s, transform .15s;
+  }
+  .project:hover { background: rgba(255,255,255,.1); border-color: rgba(255,255,255,.22); transform: translateY(-1px); }
+  .project img { width: 64px; height: 64px; border-radius: 15px; flex: none; }
+  .project strong { display: block; font-size: 18px; }
+  .project span { color: var(--muted); font-size: 15px; }
+  .project .arrow { margin-left: auto; color: var(--muted); font-size: 22px; }
+  footer { position: relative; padding: 24px; text-align: center; color: var(--muted); font-size: 14px; }
+  footer a { color: var(--muted); text-decoration: none; border-bottom: 1px solid var(--line); }
+  footer a:hover { color: var(--text); }
+</style>
+</head>
+<body>
+<main>
+  <div class="inner">
+    <h1>Hannah Rose</h1>
+    <p class="lede">Projects and things in progress.</p>
+
+    <h2>Projects</h2>
+    <a class="project" href="planck-weather/">
+      <img src="planck-weather/assets/planck-icon.png" alt="">
+      <div>
+        <strong>Planck Weather</strong>
+        <span>The temperature outside, in any unit physics allows.</span>
+      </div>
+      <span class="arrow" aria-hidden="true">→</span>
+    </a>
+  </div>
+</main>
+<footer>
+  <a href="https://github.com/HannahARose">GitHub</a>
+</footer>
+</body>
+</html>
